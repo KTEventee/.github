@@ -96,9 +96,9 @@ Eventee는 Auto Scaling 환경에서도 안정적인 관측성을 유지하기 �
 - `/actuator/prometheus` 메트릭 수집  
 - Node Exporter / cAdvisor 포함
 
-### ✔ Loki + Promtail — 로그 수집
-- Spring App(ASG)의 Docker 로그 → Promtail → Loki  
-- Grafana에서 메트릭 + 로그 통합 조회
+### ✔ Loki — 로그 수집
+- Spring App(ASG) 로그를 loki4j로 전송해 Loki에 저장
+- Grafana에서 메트릭 + 로그를 한 화면에서 통합 조회 가능
 
 ### ✔ Grafana — 실시간 대시보드
 - API 성능, 오류율, 상태 지표 시각화  
